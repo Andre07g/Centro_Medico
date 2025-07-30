@@ -1,0 +1,70 @@
+-- SCRIPT DML
+
+INSERT INTO medicos (nombre,tipo,dias_consulta_semanales,horas_consulta,en_sustitucion,sustituciones_realizadas) VALUES
+("Felipe Salazar","titular",5,8,0,0),
+("Camila Escamoza","titular",3,12,0,0),
+("Rodrigo Tulio","interino",6,7,1,0),
+("Melisa Payon","sustituto",2,10,0,4),
+("Laura Rodriguez","interino",4,3,1,0),
+("Laura Peña","titular",4,11,0,0),
+("Carlos Duarte","sustituto",3,8,0,3),
+("Julian Montoya","titular",5,9,0,0),
+("Kevin Flores","interino",6,10,0,0);
+
+INSERT INTO empleados (nombre,tipo) VALUES
+("Juan Restrepo","ats"),
+("Lia Benitez","auxiliar"),
+("Catalina Bermudez","celador"),
+("Mia Ordoñez","administrativo"),
+("Hector Salazar","auxiliar"),
+("Nancy Barbosa","administrativo"),
+("Gaston Paredes","ats"),
+("Edgar Noguera","ats"),
+("Juliana Montoya","celador");
+
+INSERT INTO pacientes (nombre,id_medico_asignado) VALUES
+("Nancy F.",1),
+("Camilo H.",2),
+("Felipe K.",3),
+("Luar J.",4),
+("Raul S.",5),
+("Edgar L.",6),
+("Amanda A.",7),
+("Felipe F.",1),
+("Fausto T.",1),
+("Hernesto R.",1),
+("Julian A.",1),
+("Diego D.",8),
+("Mariana R.",9),
+("Kelly K.",4),
+("Catalina E.",6),
+("Bartolomeo U.",4),
+("Archivaldo J.",4),
+("Vanesa H.",6),
+("Xiomara X.",1),
+("Pedro T.",1),
+("Tairon E.",6),
+("Zara R.",7),
+("Wilson R.",8),
+("German G.",1),
+("Fernando F.",5);
+
+INSERT INTO vacaciones (id_empleado,id_medico,dias_planificados,dias_tomados) VALUES 
+(null,1,15,3),
+(null,2,10,4),
+(null,3,11,11),
+(null,4,15,3),
+(null,5,15,14),
+(null,6,7,3),
+(null,7,6,0),
+(null,8,10,10),
+(null,9,12,10),
+(1,null,15,2),
+(2,null,10,2),
+(3,null,12,12),
+(4,null,10,5),
+(5,null,14,10),
+(6,null,10,10),
+(7,null,10,5),
+(8,null,15,2),
+(9,null,13,0);
